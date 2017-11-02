@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.10" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="main.java.Adapter.HeartAdapter" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Adapter/HeartAdapter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="100" x="218" y="326"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="main.java.Adapter.SccAdapter" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Adapter/SccAdapter.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="91" x="856" y="326"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="main.java.Class.Archivador" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Class/Archivador.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="87" x="689" y="130"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="main.java.Class.BeatBar" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Class/BeatBar.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="87" x="839" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="main.java.Class.Persona" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Class/Persona.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="87" x="363" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="main.java.Class.Regulador" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Class/Regulador.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="87" x="858" y="130"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="main.java.Class.Reproductor" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Class/Reproductor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="95" x="41" y="130"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="main.java.Controller.BeatController" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Controller/BeatController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="106" x="521" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="9" language="java" name="main.java.Controller.ControllerInterface" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Controller/ControllerInterface.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="131" x="966" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="10" language="java" name="main.java.Controller.HeartController" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Controller/HeartController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="111" x="667" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="main.java.Controller.SccController" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Controller/SccController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="102" x="1029" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="main.java.Model.BeatModel" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Model/BeatModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="87" x="518" y="326"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="13" language="java" name="main.java.Model.BeatModelInterface" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Model/BeatModelInterface.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="135" x="378" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="14" language="java" name="main.java.Model.HeartModel" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Model/HeartModel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="89" x="358" y="326"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="15" language="java" name="main.java.Model.HeartModelInterface" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Model/HeartModelInterface.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="140" x="45" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="16" language="java" name="main.java.Model.SccModelInterface" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Model/SccModelInterface.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="131" x="1137" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="17" language="java" name="main.java.Model.TemplateMethod.SccModel" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Model/TemplateMethod/SccModel.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="148" x="818" y="223"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="18" language="java" name="main.java.Observer.BeatObserver" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Observer/BeatObserver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="103" x="553" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="19" language="java" name="main.java.Observer.BPMObserver" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/Observer/BPMObserver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="103" x="696" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="20" language="java" name="main.java.View.DJView" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/View/DJView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="87" x="666" y="326"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="main.java.View.MultiplesView" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/View/MultiplesView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="103" x="225" y="429"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="main.java.View.OficialView" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/View/OficialView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="88" x="671" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="main.java.View.SccView" project="IngSoft-2016-SeDiceAtomico" 
+    file="/IngSoft-2016-SeDiceAtomico/src/main/java/View/SccView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="87" x="987" y="326"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <association id="24">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="25" name="model"/>      
+      <multiplicity id="26" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="27">    
+    <bendpoint x="1146" y="326"/>    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="28" name="model"/>      
+      <multiplicity id="29" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="30">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="19"/>  
+  </realization>  
+  <association id="31">    
+    <bendpoint x="605" y="130"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="32" name="controladorBeat"/>      
+      <multiplicity id="33" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="34">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="35" name="Instancia"/>      
+      <multiplicity id="36" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="37">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="38" name="bpmObservers"/>      
+      <multiplicity id="39" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="40">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="41" name="controller"/>      
+      <multiplicity id="42" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="43">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="44" name="archivador"/>      
+      <multiplicity id="45" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="46">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="47" name="model"/>      
+      <multiplicity id="48" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="49">    
+    <bendpoint x="806" y="130"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="50" name="modeloCintaM"/>      
+      <multiplicity id="51" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="52">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="53" name="p"/>      
+      <multiplicity id="54" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="55">    
+    <bendpoint x="332" y="130"/>    
+    <bendpoint x="332" y="223"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="56" name="modeloHeart"/>      
+      <multiplicity id="57" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="58">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="59" name="jukebox"/>      
+      <multiplicity id="60" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="61">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="62" name="controller"/>      
+      <multiplicity id="63" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="64">    
+    <bendpoint x="1017" y="130"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="65" name="controller"/>      
+      <multiplicity id="66" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="67">    
+    <bendpoint x="825" y="326"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="68">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="69" name="djview"/>      
+      <multiplicity id="70" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="71">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="72" name="persona"/>      
+      <multiplicity id="73" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="74">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="75" name="view"/>      
+      <multiplicity id="76" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="77">    
+    <bendpoint x="187" y="326"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="78" name="model"/>      
+      <multiplicity id="79" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="80">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="81" name="bpmObservers"/>      
+      <multiplicity id="82" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="83">    
+    <bendpoint x="783" y="326"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <association id="84">    
+    <bendpoint x="804" y="326"/>    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="85" name="bpmObservers"/>      
+      <multiplicity id="86" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="87">    
+    <bendpoint x="658" y="130"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="88" name="controladorHeart"/>      
+      <multiplicity id="89" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="90">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="91" name="sccview"/>      
+      <multiplicity id="92" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="93">    
+    <bendpoint x="1125" y="326"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
+  <realization id="94">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <association id="95">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="96" name="beatBar"/>      
+      <multiplicity id="97" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="98">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="99" name="view"/>      
+      <multiplicity id="100" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="101">    
+    <bendpoint x="166" y="130"/>    
+    <bendpoint x="166" y="223"/>    
+    <bendpoint x="166" y="326"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="102" name="multiplesView"/>      
+      <multiplicity id="103" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="104">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="105" name="scc"/>      
+      <multiplicity id="106" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="107">    
+    <bendpoint x="1104" y="326"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="16"/>  
+  </realization>  
+  <association id="108">    
+    <bendpoint x="1038" y="130"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="109" name="controladorScc"/>      
+      <multiplicity id="110" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="111">    
+    <bendpoint x="827" y="130"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="112" name="modeloScc"/>      
+      <multiplicity id="113" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="114">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <association id="115">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="116" name="model"/>      
+      <multiplicity id="117" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="118">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="15"/>  
+  </realization>  
+  <generalization id="119">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <realization id="120">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <association id="121">    
+    <bendpoint x="490" y="130"/>    
+    <bendpoint x="490" y="223"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="122" name="modeloBeat"/>      
+      <multiplicity id="123" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="124">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="13"/>  
+  </realization>  
+  <realization id="125">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <association id="126">    
+    <bendpoint x="1059" y="130"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="127" name="controladorCinta"/>      
+      <multiplicity id="128" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="129">    
+    <bendpoint x="469" y="130"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="130" name="persona"/>      
+      <multiplicity id="131" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="132">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="133" name="beatObservers"/>      
+      <multiplicity id="134" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="135">    
+    <bendpoint x="487" y="326"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="136" name="model"/>      
+      <multiplicity id="137" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="138">    
+    <bendpoint x="635" y="326"/>    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="139" name="beatObservers"/>      
+      <multiplicity id="140" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="141">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="142" name="controller"/>      
+      <multiplicity id="143" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="144">    
+    <bendpoint x="996" y="130"/>    
+    <bendpoint x="996" y="223"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="145" name="sccView"/>      
+      <multiplicity id="146" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="147">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="148" name="estaView"/>      
+      <multiplicity id="149" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="150">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="151" name="heart"/>      
+      <multiplicity id="152" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="153">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="154" name="modelo"/>      
+      <multiplicity id="155" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="156">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="157" name="beatObservers"/>      
+      <multiplicity id="158" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="159">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="19"/>  
+  </realization>  
+  <association id="160">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="161" name="regulador"/>      
+      <multiplicity id="162" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

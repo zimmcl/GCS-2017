@@ -1,0 +1,78 @@
+apply plugin: 'java'
+apply plugin: 'checkstyle'
+apply plugin: 'cpd'
+apply plugin: 'pmd'
+apply plugin: 'findbugs'
+apply plugin: 'jacoco'
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+        classpath 'de.aaschmid:gradle-cpd-plugin:1.0'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+checkstyle {
+    ignoreFailures = true
+    showViolations = false
+    toolVersion = '6.6'
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+pmd {
+    ignoreFailures = true
+}
+
+tasks.withType(Pmd) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+cpd {
+    language = 'java'
+    minimumTokenCount = 50
+    ignoreFailures = true
+}
+
+cpdCheck {
+    reports {
+        text.enabled = true
+        xml.enabled = false
+    }
+}
+
+findbugs {
+    ignoreFailures = true
+    effort = "max"
+    reportLevel = "low"
+}
+
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+jacocoTestReport.dependsOn test
