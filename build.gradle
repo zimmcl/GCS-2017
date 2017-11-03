@@ -4,6 +4,7 @@ apply plugin: 'cpd'
 apply plugin: 'pmd'
 apply plugin: 'findbugs'
 apply plugin: 'jacoco'
+//apply plugin: 'com.github.ksoichiro.console.reporter'
 
 buildscript {
     repositories {
@@ -13,6 +14,8 @@ buildscript {
     }
     dependencies {
         classpath 'de.aaschmid:gradle-cpd-plugin:1.0'
+        //classpath 'com.github.ksoichiro:gradle-console-reporter:0.5.0'
+        classpath 'com.google.code.findbugs:findbugs:3.0.1'
     }
 }
 
@@ -40,6 +43,7 @@ tasks.withType(Checkstyle) {
 
 pmd {
     ignoreFailures = true
+    consoleOutput = false
 }
 
 tasks.withType(Pmd) {
@@ -51,7 +55,7 @@ tasks.withType(Pmd) {
 
 cpd {
     language = 'java'
-    minimumTokenCount = 50
+    minimumTokenCount = 100
     ignoreFailures = true
 }
 
@@ -70,9 +74,33 @@ findbugs {
 
 tasks.withType(FindBugs) {
     reports {
-        xml.enabled = false
-        html.enabled = true
+        xml.enabled = true
+        html.enabled = false
     }
 }
 
-jacocoTestReport.dependsOn test
+test {
+  testLogging {
+    afterSuite { desc, result ->
+      if (!desc.parent) { // will match the outermost suite
+        println '----------------------------------------------------------------------'
+        println "RESULTADO UTest: ${result.resultType} (${result.testCount} test, ${result.successfulTestCount} passed, ${result.failedTestCount} failed, ${result.skippedTestCount} skipped)"
+        println '----------------------------------------------------------------------'
+      }
+    }
+  }
+}
+
+task checkFindBugsReport << {
+   def xmlReport = findbugsMain.reports.xml
+   def slurped = new XmlSlurper().parse(xmlReport.destination)
+   def bugsFound = slurped.BugInstance.size()
+   if (bugsFound > 0) {
+    println '-----------------------------------'
+    println("SE ENCONTRARON $bugsFound BUG (FindBugs).")
+    println '-----------------------------------'
+   }
+}
+
+findbugsMain.finalizedBy checkFindBugsReport
+//jacocoTestReport.dependsOn test
