@@ -6,10 +6,10 @@ apply plugin: 'findbugs'
 apply plugin: 'jacoco'
 apply plugin: 'com.github.ksoichiro.console.reporter'
 
-def min_num_warning = 17700
-def min_num_pmd = 100
-def min_num_cpd = 700
-def min_findbug = 740
+def min_num_warning = 177
+def min_num_pmd = 1
+def min_num_cpd = 8
+def min_findbug = 74
 
 buildscript {
     repositories {
