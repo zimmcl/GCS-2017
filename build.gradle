@@ -10,10 +10,10 @@ apply plugin: 'com.github.ksoichiro.console.reporter'
    Un valor superior en la fase de creacion de la build
    produce una finalizacion de esta. No se aceptan valores
    superiores a los prefijados. */
-def min_num_warning = 177
-def min_num_pmd = 1
-def min_num_cpd = 8
-def min_findbug = 74
+def max_num_warning = 177
+def max_num_pmd = 1
+def max_num_cpd = 8
+def max_findbug = 74
 
 buildscript {
     repositories {
@@ -115,8 +115,8 @@ tasks.withType(Checkstyle).each { checkstyleTask ->
                         new_num_warning++                        
                     }                  
                 }
-                if(new_num_warning>min_num_warning) {
-                    throw new GradleException("  ----------------------------------------------\n  ERROR: MIN_warning($min_num_warning) < ACTUAL_warning($new_num_warning)\n  ----------------------------------------------")
+                if(new_num_warning>max_num_warning) {
+                    throw new GradleException("  ----------------------------------------------\n  ERROR: MAX_warning($max_num_warning) < ACTUAL_warning($new_num_warning)\n  ----------------------------------------------")
                 }
             }
         }
@@ -135,8 +135,8 @@ tasks.withType(Pmd).each { pmdTask ->
                         new_num_pmd++                        
                     }                  
                 }
-                if(new_num_pmd>min_num_pmd) {
-                    throw new GradleException("  -------------------------------------\n  ERROR: MIN_pmd($min_num_pmd) < ACTUAL_pmd($new_num_pmd)\n  -------------------------------------")
+                if(new_num_pmd>max_num_pmd) {
+                    throw new GradleException("  -------------------------------------\n  ERROR: MAX_pmd($max_num_pmd) < ACTUAL_pmd($new_num_pmd)\n  -------------------------------------")
                 }
             }
         }
@@ -148,8 +148,8 @@ tasks.withType(FindBugs).each { findbugTask ->
         def xmlReport = findbugsMain.reports.xml
         def slurped = new XmlSlurper().parse(xmlReport.destination)
         def bugsFound = slurped.BugInstance.size()
-        if (bugsFound > min_findbug) {
-            throw new GradleException("  ----------------------------------------------\n  ERROR: MIN_findbug($min_findbug) < ACTUAL_Findbug($bugsFound)\n  ----------------------------------------------")
+        if (bugsFound > max_findbug) {
+            throw new GradleException("  ----------------------------------------------\n  ERROR: MAX_findbug($max_findbug) < ACTUAL_Findbug($bugsFound)\n  ----------------------------------------------")
         }   
     }
 }
@@ -164,8 +164,8 @@ task countCpd << {
                 new_num_cpd++                        
             }                  
         }
-        if(new_num_cpd>min_num_cpd) {
-            throw new GradleException("  -----------------------------------\n  ERROR: MIN_cpd($min_num_cpd) < ACTUAL_cpd($new_num_cpd)\n  -----------------------------------")
+        if(new_num_cpd>max_num_cpd) {
+            throw new GradleException("  -----------------------------------\n  ERROR: MAX_cpd($max_num_cpd) < ACTUAL_cpd($new_num_cpd)\n  -----------------------------------")
         }
     }
 }
