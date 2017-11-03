@@ -91,7 +91,7 @@ test {
         println '----------------------------------------------------------------------'
       }
       if(result.testCount!=result.successfulTestCount) {
-        throw new GradleException("----------------------------\n  ERROR: Test no completado\n  ----------------------------")
+        throw new GradleException("  ----------------------------\n  ERROR: Test no completado\n  ----------------------------")
       }
     }
   }
@@ -110,7 +110,7 @@ tasks.withType(Checkstyle).each { checkstyleTask ->
                     }                  
                 }
                 if(new_num_warning>min_num_warning) {
-                    throw new GradleException("-------------------------------------------\n  ERROR: MIN_warning($min_num_warning) < ACTUAL_warning($new_num_warning)\n  -------------------------------------------")
+                    throw new GradleException("  -------------------------------------------\n  ERROR: MIN_warning($min_num_warning) < ACTUAL_warning($new_num_warning)\n  -------------------------------------------")
                 }
             }
         }
@@ -130,7 +130,7 @@ tasks.withType(Pmd).each { pmdTask ->
                     }                  
                 }
                 if(new_num_pmd>min_num_pmd) {
-                    throw new GradleException("----------------------------------\n  ERROR: MIN_pmd($min_num_pmd) < ACTUAL_pmd($new_num_pmd)\n  ----------------------------------")
+                    throw new GradleException("  ----------------------------------\n  ERROR: MIN_pmd($min_num_pmd) < ACTUAL_pmd($new_num_pmd)\n  ----------------------------------")
                 }
             }
         }
@@ -143,7 +143,7 @@ tasks.withType(FindBugs).each { findbugTask ->
         def slurped = new XmlSlurper().parse(xmlReport.destination)
         def bugsFound = slurped.BugInstance.size()
         if (bugsFound > min_findbug) {
-            throw new GradleException("-------------------------------------------\n  ERROR: MIN_findbug($min_findbug) < ACTUAL_Findbug($bugsFound)\n  -------------------------------------------")
+            throw new GradleException("  -------------------------------------------\n  ERROR: MIN_findbug($min_findbug) < ACTUAL_Findbug($bugsFound)\n  -------------------------------------------")
         }   
     }
 }
