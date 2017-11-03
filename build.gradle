@@ -10,10 +10,10 @@ apply plugin: 'com.github.ksoichiro.console.reporter'
    Un valor superior en la fase de creacion de la build
    produce una finalizacion de esta. No se aceptan valores
    superiores a los prefijados. */
-def min_num_warning = 177
-def min_num_pmd = 1
-def min_num_cpd = 8
-def min_findbug = 74
+def min_num_warning = 17700
+def min_num_pmd = 100
+def min_num_cpd = 800
+def min_findbug = 7400
 
 buildscript {
     repositories {
