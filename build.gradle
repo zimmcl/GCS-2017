@@ -11,7 +11,7 @@ apply plugin: 'com.github.ksoichiro.console.reporter'
    produce una finalizacion de esta. No se aceptan valores
    superiores a los prefijados. */
 def min_num_warning = 17700
-def min_num_pmd = 1
+def min_num_pmd = 100
 def min_num_cpd = 8
 def min_findbug = 740
 
