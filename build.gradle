@@ -5,6 +5,9 @@ apply plugin: 'pmd'
 apply plugin: 'findbugs'
 apply plugin: 'jacoco'
 //apply plugin: 'com.github.ksoichiro.console.reporter'
+def min_num_warning = 177
+def min_num_pmd = 1
+def min_findbug = 74
 
 buildscript {
     repositories {
@@ -48,7 +51,7 @@ pmd {
 
 tasks.withType(Pmd) {
     reports {
-        xml.enabled = false
+        xml.enabled = true
         html.enabled = true
     }
 }
@@ -82,25 +85,67 @@ tasks.withType(FindBugs) {
 test {
   testLogging {
     afterSuite { desc, result ->
-      if (!desc.parent) { // will match the outermost suite
+      if (!desc.parent) { 
         println '----------------------------------------------------------------------'
         println "RESULTADO UTest: ${result.resultType} (${result.testCount} test, ${result.successfulTestCount} passed, ${result.failedTestCount} failed, ${result.skippedTestCount} skipped)"
         println '----------------------------------------------------------------------'
+      }
+      if(result.testCount!=result.successfulTestCount) {
+        throw new GradleException("----------------------------\n  ERROR: Test no completado\n  ----------------------------")
       }
     }
   }
 }
 
-task checkFindBugsReport << {
-   def xmlReport = findbugsMain.reports.xml
-   def slurped = new XmlSlurper().parse(xmlReport.destination)
-   def bugsFound = slurped.BugInstance.size()
-   if (bugsFound > 0) {
-    println '-----------------------------------'
-    println("SE ENCONTRARON $bugsFound BUG (FindBugs).")
-    println '-----------------------------------'
-   }
+tasks.withType(Checkstyle).each { checkstyleTask ->
+    checkstyleTask.doLast {
+        reports.all { report ->
+            def outputFile = report.destination           
+            def line
+            def new_num_warning = 0 
+            outputFile.withReader { reader ->
+                while ((line = reader.readLine())!=null) {
+                    if(line.contains("<error ")) {
+                        new_num_warning++                        
+                    }                  
+                }
+                if(new_num_warning>min_num_warning) {
+                    throw new GradleException("-------------------------------------------\n  ERROR: MIN_warning($min_num_warning) < ACTUAL_warning($new_num_warning)\n  -------------------------------------------")
+                }
+            }
+        }
+    }
 }
 
-findbugsMain.finalizedBy checkFindBugsReport
+tasks.withType(Pmd).each { pmdTask ->
+    pmdTask.doLast {
+        reports.all { report ->
+            def outputFile = report.destination           
+            def line
+            def new_num_pmd = 0 
+            outputFile.withReader { reader ->
+                while ((line = reader.readLine())!=null) {
+                    if(line.contains("<violation ")) {
+                        new_num_pmd++                        
+                    }                  
+                }
+                if(new_num_pmd>min_num_pmd) {
+                    throw new GradleException("----------------------------------\n  ERROR: MIN_pmd($min_num_pmd) < ACTUAL_pmd($new_num_pmd)\n  ----------------------------------")
+                }
+            }
+        }
+    }
+}
+
+tasks.withType(FindBugs).each { findbugTask ->
+    findbugTask.doLast {
+        def xmlReport = findbugsMain.reports.xml
+        def slurped = new XmlSlurper().parse(xmlReport.destination)
+        def bugsFound = slurped.BugInstance.size()
+        if (bugsFound > min_findbug) {
+            throw new GradleException("-------------------------------------------\n  ERROR: MIN_findbug($min_findbug) < ACTUAL_Findbug($bugsFound)\n  -------------------------------------------")
+        }   
+    }
+}
+
 //jacocoTestReport.dependsOn test
