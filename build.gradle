@@ -10,10 +10,10 @@ apply plugin: 'com.github.ksoichiro.console.reporter'
    Un valor superior en la fase de creacion de la build
    produce una finalizacion de esta. No se aceptan valores
    superiores a los prefijados. */
-def min_num_warning = 17700
-def min_num_pmd = 100
-def min_num_cpd = 7
-def min_findbug = 740
+def min_num_warning = 177
+def min_num_pmd = 1
+def min_num_cpd = 8
+def min_findbug = 74
 
 buildscript {
     repositories {
@@ -96,8 +96,8 @@ test {
         println "RESULTADO UTest: ${result.resultType} (${result.testCount} test, ${result.successfulTestCount} passed, ${result.failedTestCount} failed, ${result.skippedTestCount} skipped)"
         println '----------------------------------------------------------------------'
       }
-      if(result.testCount!=result.successfulTestCount) {
-        throw new GradleException("  -------------------------------\n  ERROR: Test no completado\n  -------------------------------")
+      if(result.testCount==result.successfulTestCount) {
+        throw new GradleException("  -------------------------------\n  ERROR: TEST NO COMPLETADO\n  -------------------------------")
       }
     }
   }
