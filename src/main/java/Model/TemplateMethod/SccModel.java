@@ -21,8 +21,8 @@ public abstract class SccModel implements SccModelInterface, Runnable {
 	int lastSpeed;
 	Thread thread;
 	Date dateInicial;
-	//double metros;
-	//double currentTime;
+	double metros;
+	double currentTime;
 	boolean stop;
 	Regulador regulador;
 	
