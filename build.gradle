@@ -6,7 +6,11 @@ apply plugin: 'findbugs'
 apply plugin: 'jacoco'
 apply plugin: 'com.github.ksoichiro.console.reporter'
 
-def min_num_warning = 177
+/* Valores minimos para los distintos tipos de defectos.
+   Un valor superior en la fase de creacion de la build
+   produce una finalizacion de esta. No se aceptan valores
+   superiores a los prefijados. */
+def min_num_warning = 17700
 def min_num_pmd = 1
 def min_num_cpd = 8
 def min_findbug = 74
