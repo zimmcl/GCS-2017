@@ -6,10 +6,10 @@ apply plugin: 'findbugs'
 apply plugin: 'jacoco'
 apply plugin: 'com.github.ksoichiro.console.reporter'
 
-def min_num_warning = 177
-def min_num_pmd = 1
-def min_num_cpd = 7
-def min_findbug = 74
+def min_num_warning = 17700
+def min_num_pmd = 10
+def min_num_cpd = 700
+def min_findbug = 740
 
 buildscript {
     repositories {
@@ -93,7 +93,7 @@ test {
         println '----------------------------------------------------------------------'
       }
       if(result.testCount!=result.successfulTestCount) {
-        throw new GradleException("  ------------------------------\n  ERROR: Test no completado\n    ------------------------------")
+        throw new GradleException("  -------------------------------\n  ERROR: Test no completado\n  -------------------------------")
       }
     }
   }
@@ -112,7 +112,7 @@ tasks.withType(Checkstyle).each { checkstyleTask ->
                     }                  
                 }
                 if(new_num_warning>min_num_warning) {
-                    throw new GradleException("  ---------------------------------------------\n  ERROR: MIN_warning($min_num_warning) < ACTUAL_warning($new_num_warning)\n    ---------------------------------------------")
+                    throw new GradleException("  ----------------------------------------------\n  ERROR: MIN_warning($min_num_warning) < ACTUAL_warning($new_num_warning)\n  ----------------------------------------------")
                 }
             }
         }
@@ -132,7 +132,7 @@ tasks.withType(Pmd).each { pmdTask ->
                     }                  
                 }
                 if(new_num_pmd>min_num_pmd) {
-                    throw new GradleException("  ------------------------------------\n  ERROR: MIN_pmd($min_num_pmd) < ACTUAL_pmd($new_num_pmd)\n    ------------------------------------")
+                    throw new GradleException("  -------------------------------------\n  ERROR: MIN_pmd($min_num_pmd) < ACTUAL_pmd($new_num_pmd)\n  -------------------------------------")
                 }
             }
         }
@@ -145,7 +145,7 @@ tasks.withType(FindBugs).each { findbugTask ->
         def slurped = new XmlSlurper().parse(xmlReport.destination)
         def bugsFound = slurped.BugInstance.size()
         if (bugsFound > min_findbug) {
-            throw new GradleException("  ---------------------------------------------\n  ERROR: MIN_findbug($min_findbug) < ACTUAL_Findbug($bugsFound)\n    ---------------------------------------------")
+            throw new GradleException("  ----------------------------------------------\n  ERROR: MIN_findbug($min_findbug) < ACTUAL_Findbug($bugsFound)\n  ----------------------------------------------")
         }   
     }
 }
@@ -161,7 +161,7 @@ task countCpd << {
             }                  
         }
         if(new_num_cpd>min_num_cpd) {
-            throw new GradleException("  ----------------------------------\n  ERROR: MIN_cpd($min_num_cpd) < ACTUAL_cpd($new_num_cpd)\n    ----------------------------------")
+            throw new GradleException("  -----------------------------------\n  ERROR: MIN_cpd($min_num_cpd) < ACTUAL_cpd($new_num_cpd)\n  -----------------------------------")
         }
     }
 }
