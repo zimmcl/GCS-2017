@@ -1,5 +1,5 @@
 ﻿<p align="center">
-<img src="http://s18.postimg.org/s9i419ltl/Se_dice_At_mico.jpg" width="250" height="250"</p>
+<img src="http://s3.amazonaws.com/libapps/accounts/17009/images/Calidad_Software.png" width="350" height="250"</p>
 
 **<p align="center">El Rejunte es un grupo de trabajo conformado por estudiantes universitarios que cursan la materia Gestión de la Calidad del Software.</p>**
 
