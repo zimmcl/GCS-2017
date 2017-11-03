@@ -13,7 +13,7 @@ apply plugin: 'com.github.ksoichiro.console.reporter'
 def min_num_warning = 17700
 def min_num_pmd = 1
 def min_num_cpd = 8
-def min_findbug = 74
+def min_findbug = 740
 
 buildscript {
     repositories {
